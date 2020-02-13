@@ -9,7 +9,7 @@
 <script>
 export default {
   name: 'TodoTasks',
-  props: {todoTasks: Object}
+  props: {todoTasks: Array}
 }
 </script>
 
