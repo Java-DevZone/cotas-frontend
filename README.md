@@ -5,7 +5,7 @@
 <h2 align="center">
     Front-end for Quotas System
 </h2>
-Front-end for Quotas System at [https://github.com/paulojribp/sistemadecotas](https://github.com/paulojribp/sistemadecotas)
+Front-end for Quotas System at [https://github.com/Java-DevZone/sistemadecotas](https://github.com/Java-DevZone/sistemadecotas)
 
 <!--- Melhore ou adicione mais pelo link https://shields.io --->
 <p align="center">
