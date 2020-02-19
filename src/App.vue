@@ -1,51 +1,43 @@
 <template>
+
   <div id="app">
+    <b-navbar toggleable="lg" type="dark" variant="info">
+      <b-navbar-brand href="#">Sistema de Cotas</b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav>
+          <b-nav-item href="#">Investimentos</b-nav-item>
+        </b-navbar-nav>
 
-    <div>
-      <b-dropdown text="Primeiro Menu" variant="primary" class="m-2">
-        <b-dropdown-item href="#">Action</b-dropdown-item>
-        <b-dropdown-item href="#">Another action</b-dropdown-item>
-        <b-dropdown-item href="#">Something else here</b-dropdown-item>
-      </b-dropdown>
-    </div>
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item-dropdown text="Usuario" right>
+            <b-dropdown-item href="#">Profile</b-dropdown-item>
+            <b-dropdown-item href="#">Sign Out</b-dropdown-item>
+          </b-nav-item-dropdown>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
 
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Sistema de Cotas do Mercado Financeiro"/>
-    
-    <TodoTasks :todoTasks="tasksList" />
-    
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import TodoTasks from './components/TodoTasks.vue'
+import { routes } from './routes'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld,
-    TodoTasks
-  }, 
-  data: function(){
+  data() {
     return {
-      tasksList : [
-        { id: 0, text: 'Vegetables' },
-        { id: 1, text: 'Cheese' },
-        { id: 2, text: 'Whatever else humans are supposed to eat' }
-      ]
+      routes
     }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #content {
+    padding: 7px;
+  }
 </style>
