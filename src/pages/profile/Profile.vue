@@ -6,15 +6,14 @@
         <b-row>
           <b-col>
             <b-img :src="avatar" class="avatar" />
-            <br />
-            <strong>Nome:</strong>
-            {{name}}
-            <br />
-            <strong>Email:</strong>
-            {{email}}
-            <br />
-            <strong>Carteiras:</strong>
-            {{wallets}}
+            <p>
+              <strong>Nome:</strong>
+              {{name}}
+            </p>
+            <p>
+              <strong>Email:</strong>
+              {{email}}
+            </p>
           </b-col>
           <b-col></b-col>
           <b-col></b-col>
