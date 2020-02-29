@@ -12,7 +12,7 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
           <b-nav-item-dropdown text="Usuario" right>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
+            <b-dropdown-item href="/profile">Profile</b-dropdown-item>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import { routes } from './routes';
+import { routes } from "./routes";
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
       routes
