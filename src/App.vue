@@ -1,12 +1,12 @@
 <template>
-
   <div id="app">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="#">Sistema de Cotas</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Investimentos</b-nav-item>
+          <b-nav-item href="/investments">Investimentos</b-nav-item>
+          <b-nav-item href="/wallet">Carteira</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -24,20 +24,20 @@
 </template>
 
 <script>
-import { routes } from './routes'
+import { routes } from './routes';
 
 export default {
   name: 'app',
   data() {
     return {
       routes
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
-  #content {
-    padding: 7px;
-  }
+#content {
+  padding: 7px;
+}
 </style>
