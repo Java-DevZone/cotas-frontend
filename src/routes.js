@@ -6,6 +6,6 @@ import Profile from './pages/profile/Profile';
 export const routes = [
   {path: '/wallet', component: Wallet},
   {path: '/investments', component: Investments},
-  {path: "/dashboard", component: Dashbaord },
+  {path: '/dashboard', component: Dashbaord },
   {path: '/profile', component: Profile},
 ];
