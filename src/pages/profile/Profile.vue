@@ -7,11 +7,14 @@
           <b-col>
             <b-img :src="avatar" class="avatar" />
             <br />
-            <strong>Nome:</strong> Goufix
+            <strong>Nome:</strong>
+            {{name}}
             <br />
-            <strong>Email:</strong> alifer.17.11@gmail.com
+            <strong>Email:</strong>
+            {{email}}
             <br />
-            <strong>Carteiras:</strong> Pesca, educacional
+            <strong>Carteiras:</strong>
+            {{wallets}}
           </b-col>
           <b-col></b-col>
           <b-col></b-col>
@@ -27,7 +30,12 @@ export default {
   name: "Profile",
   data() {
     return {
-      avatar
+      avatar,
+      userData: {
+        name: "Álifer",
+        email: "alifer.17.11@gmail.com",
+        wallets: "Pesca, educacional"
+      }
     };
   }
 };
